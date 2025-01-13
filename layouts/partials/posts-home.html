@@ -1,0 +1,11 @@
+<h2 class="weblinks-title">Recent posts</h2>
+                    <ul>    
+                            {{ range ( where site.RegularPages.ByLastmod.Reverse "Type" "posts" | first 5 ) }}
+<li><span class="post-date">{{.Date | time.Format "2006-01-02" }}</span>: <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
+        {{ if ne .Lastmod .Date }} <span class="article-update">(updated: {{ .Lastmod | time.Format "2006-01-02" }})</span>
+        {{ end }}
+</li>
+{{ end }}
+</ul>
+
+                    <a href="/posts">View all posts</a>

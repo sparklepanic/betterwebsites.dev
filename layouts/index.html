@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+          <div class="name">{{ .Site.Params.name }}</div>
+
+
+           <p class="pronouns">{{ .Site.Params.pronouns }}</p>
+
+  {{ partial "bio.html" . }}
+
+  {{ partial "links.html" . }}
+
+  {{ partial "posts-home.html" . }}
+  
+  {{ partial "about.html" . }}
+
+  {{ end }}

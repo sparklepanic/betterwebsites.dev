@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<span>
+ {{ partial "tag-cloud.html" . }}
+</span>
+
+<h2>{{ .Title }} ({{ printf "%d" (len .Pages) }})</h2>
+
+{{ partial "postli.html" . }}
+
+{{ end }}

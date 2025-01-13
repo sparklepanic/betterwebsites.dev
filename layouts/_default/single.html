@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div class="post-frontmatter">
+<h1>{{ if .Page.Param "icon" }}
+<svg class="bi" fill="currentColor">
+                    <use xlink:href="/bootstrap-icons.svg#{{ .Page.Params.icon }}"/>
+</svg> {{ end }}{{ .Page.Title }}</h1>
+      <p class="post-description">{{ .Page.Description | markdownify }}</p>
+
+<p class="post-update"> <svg class="bi" fill="currentColor">
+                    <use xlink:href="/bootstrap-icons.svg#clock-history"/>
+</svg> Updated {{ .Lastmod | time.Format "2006-01-02" }}
+    </p>
+    </div>
+    
+{{ .Content }}
+
+{{ end }}

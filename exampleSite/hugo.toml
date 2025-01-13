@@ -1,0 +1,64 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'betterwebsites.dev'
+theme = '../..'
+copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). Site theme [under MIT license](/theme/LICENSE). This creator is dedicated to the sharing of art, science, and ideas. See the [privacy policy and legal information](/legal) here."
+date_format = "2006-01-02" # Because anything other than ISO8601 is folly
+
+[markup.highlight]
+style = "dracula"
+
+# This theme is meant to get most of the homepage data right from the config.toml. The `name` parameter will be the title of the homepage, with provided pronouns below the name. The `bio` parameter is piped to Markdownify so you can write your bio in markdown.
+
+[Params]
+  name = "BetterWebsites"
+  firstname = "BetterWebsites"
+  pronouns = "she/they/he/xe"
+  bio = """
+An example site for this minimalist [GoHugo](https://gohugo.io/) theme so you too can escape the hell that is social media. Bring back the [Myspace era](https://www.codecademy.com/resources/blog/myspace-and-the-coding-legacy/), insightful [blogs](https://manuelmoreale.com/on-the-state-of-the-web), great [info sites](https://transfemscience.org/articles/transfem-intro/), easily readable [RSS](https://www.404media.co/404-media-now-has-a-full-text-rss-feed/), and [a place for all of us on the web](https://indieweb.org/).
+  	"""
+  
+# This is an optional About section. Comment out all the lines from about to the last 3 quote marks to disable.
+ 
+ about = """
+- Optional About section. Comment out all the lines from about to the last 3 quote marks to disable in the `hugo.toml`. 
+- It's piped to Markdown and accepts shortcodes.
+
+{{< figure src="/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp" link="/highres/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="An arched bridge over a pond of water with greenery all around" caption="*photo by [@lorenzoherrera](https://unsplash.com/photos/vintage-gray-game-console-and-joystick-p0j-mE6mGo4) on Unsplash* | Licensed under [Unsplash License](https://unsplash.com/license)." >}}
+	"""
+
+# Below you can put links for your home page with supported Bootstrap icons
+
+  
+ [[Params.links]]
+  url = "https://github.com/sparklepanic/betterwebsites"
+  text = "BetterWebsites code"
+  icon = "github"
+  
+   [[Params.links]]
+  url = "/posts/theme"
+  text = "Theme Features"
+  icon = "star"
+
+
+[[Params.links]]
+  url = "https://infosec.exchange/"
+  text = "Mastodon"
+  icon = "mastodon"
+  #html_attributes = "rel=\"me\"" # To provide Mastodon verification
+
+[[Params.links]]
+  url = "https://instagram.com/"
+  text = "Instagram"
+  icon = "instagram"
+
+[[Params.links]]
+  url = "/posts/index.xml"
+  text = "Subscribe via RSS"
+  icon = "rss-fill"
+
+  [outputs]
+  home = ['html']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html', 'rss']

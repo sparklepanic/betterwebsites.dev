@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+<ul>
+{{ range .Pages.ByLastmod.Reverse }}
+<li><span class="article-date">{{.Date | time.Format "2006-01-02" }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>        {{ if ne .Lastmod .Date }} (updated: {{ .Lastmod | time.Format "2006-01-02" }})
+        {{ end }}</li>
+{{ end }}
+<ul>
+{{ end }}
