@@ -17,7 +17,7 @@ Importantly, it tries to follow a [designed-to-last](https://jeffhuang.com/desig
 ## How to add this theme to your GoHugo Site
 
 1. `cd` into your hugo site.
-2. Add `git submodule add git@github.com:sparklepanic/betterwebsites.git themes/betterwebsites`
+2. Add `git submodule add git@github.com:sparklepanic/betterwebsites.dev.git themes/betterwebsites`
 3. `cd` into the theme and fill out the config.toml and you'll be good to go!
 
 ### How to update the theme after new updates have been published to Github
@@ -69,7 +69,7 @@ An example site for this minimalist [GoHugo](https://gohugo.io/) theme so you to
 
   
  [[Params.links]]
-  url = "https://github.com/sparklepanic/betterwebsites"
+  url = "https://github.com/sparklepanic/betterwebsites.dev"
   text = "BetterWebsites code"
   icon = "github"
   

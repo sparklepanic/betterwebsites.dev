@@ -3,7 +3,7 @@ This is the betterwebsites theme. This is a simple gohugo theme that I’ve been
 # How to add this to your GoHugo Site
 
 1. `cd` into your hugo site.
-2. Add `git submodule add git@github.com:sparklepanic/betterwebsites.git themes/betterwebsites`
+2. Add `git submodule add git@github.com:sparklepanic/betterwebsites.dev.git themes/betterwebsites`
 3. `cd` into the theme and fill out the config.toml and you'll be good to go!
 
 # How to update the theme after new updates have been published to Github
