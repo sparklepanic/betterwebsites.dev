@@ -8,7 +8,7 @@ This is the betterwebsites theme. This is a simple gohugo theme that I’ve been
 
 # How to update the theme after new updates have been published to Github
 
-1. `cd` int your hugo site
+1. `cd` into your hugo site
 2. `git submodule update --remote`
 
 ## If you're downloading your repos with this submodule already in it,
