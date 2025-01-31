@@ -42,10 +42,11 @@ An example site for this minimalist [GoHugo](https://gohugo.io/) theme so you to
 
 
 [[Params.links]]
-  url = "https://infosec.exchange/"
-  text = "Mastodon"
+  url = "https://infosec.exchange/@sparklepanic"
+  text = "Created by @sparklepanic"
   icon = "mastodon"
-  #html_attributes = "rel=\"me\"" # To provide Mastodon verification
+  html_attributes = "rel=\"me\"" # To provide Mastodon verification
+
 
 [[Params.links]]
   url = "https://instagram.com/"
