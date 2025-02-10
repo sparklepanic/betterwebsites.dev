@@ -1,4 +1,4 @@
-baseURL = 'betterwebsites.dev'
+baseURL = 'https://betterwebsites.dev'
 languageCode = 'en-us'
 title = 'betterwebsites.dev'
 theme = '../..'
