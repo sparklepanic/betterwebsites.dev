@@ -3,7 +3,7 @@ title: "BetterWebsites Theme Features"
 date: "2025-01-12"
 draft: "False"
 thumbnail: "/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp"
-description: "Just a **test** description**"
+#description: "Just a **test** description**"
 tags: 
 - web
 - blog
