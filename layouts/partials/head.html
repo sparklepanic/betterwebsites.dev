@@ -1,7 +1,7 @@
   <head>
     <meta charset="utf-8">
-    <meta name="title" content="{{ .Title }} | {{ .Site.Title }}">
-    <meta name="description" content="{{ .Site.Params.bio }}">
+   <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.bio | markdownify }}">
     <meta name="author" content="{{ .Site.Params.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <!-- Start of Open Graph -->
@@ -12,7 +12,7 @@
     {{ else }}
     <meta property="og:type" content="website">
     {{ end }}
-    <meta property="og:description" content="{{ .Description }}">
+    <meta property="og:description" content="{{ .Description | markdownify }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
     {{ if .Params.thumbnail }}
