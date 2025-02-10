@@ -3,7 +3,7 @@ title: "BetterWebsites Theme Features"
 date: "2025-01-12"
 draft: "False"
 description: "Let's make the web great again"
-thumbnail: "lorenzo-herrera-p0j-mE6mGo4-unsplash.webp"
+thumbnail: "/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp"
 tags: 
 - web
 - blog
