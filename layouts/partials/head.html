@@ -1,12 +1,26 @@
   <head>
     <meta charset="utf-8">
-    <title>{{ .Site.Title }}</title>
+    <meta name="title" content="{{ .Title }} | {{ .Site.Title }}">
     <meta name="description" content="{{ .Site.Params.bio }}">
     <meta name="author" content="{{ .Site.Params.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="{{ .Site.Title }}">
+ <!-- Start of Open Graph -->
+    <meta property="og:title" content="{{ .Title }}">
+    {{ if .IsPage }}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}">
+    {{ else }}
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ .Site.BaseURL }}">
-    <meta property="og:description" content="Links to content by {{ .Site.Params.name }}">
+    {{ end }}
+    <meta property="og:description" content="{{ .Description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    {{ if .Params.thumbnail }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+    {{ end }}
+    {{ range .Params.tags }}
+    <meta property="og:tags" content="{{ . }}">
+    {{ end }}
+    <!-- End of Open Graph -->
     <link rel="stylesheet" href="/css/main.css">
   </head>
