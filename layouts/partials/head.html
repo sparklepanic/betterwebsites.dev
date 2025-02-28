@@ -4,6 +4,9 @@
     <meta name="description" content="{{ .Summary | markdownify }}">
     <meta name="author" content="{{ .Site.Params.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ if .Site.Params.fedi }}
+        <meta name="fediverse:creator" content="{{ .Site.Params.fedi }}" />
+        {{ end }}
  <!-- Start of Open Graph -->
     <meta property="og:title" content="{{ .Title }}">
     {{ if .IsPage }}
