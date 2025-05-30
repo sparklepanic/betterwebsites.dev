@@ -4,6 +4,7 @@ date: "2025-01-12"
 draft: "False"
 thumbnail: "/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp"
 #summary: "Just a **test** description**"
+toc: "true"
 tags: 
 - web
 - blog
