@@ -10,6 +10,8 @@ tags:
 - blog
 ---
 
+The table of contents should show here
+
 {{< figure src="/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp" link="/highres/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="An arched bridge over a pond of water with greenery all around" caption="*photo by [@lorenzoherrera](https://unsplash.com/photos/vintage-gray-game-console-and-joystick-p0j-mE6mGo4) on Unsplash* | Licensed under [Unsplash License](https://unsplash.com/license)." >}}
 
 This is a simple [gohugo](https://gohugo.io/) theme.
