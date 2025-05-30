@@ -10,11 +10,6 @@ style = "dracula"
 
 # This theme is meant to get most of the homepage data right from the config.toml. The `name` parameter will be the title of the homepage, with provided pronouns below the name. The `bio` parameter is piped to Markdownify so you can write your bio in markdown.
 
-
-[markup.tableOfContents]
-  startLevel = 1 # Suggested, draws TOC using all heading levels
-  endLevel = 6 # Suggested, draws TOC using all heading levels
-
 [Params]
   name = "BetterWebsites"
   firstname = "BetterWebsites"
