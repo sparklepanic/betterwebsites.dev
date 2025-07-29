@@ -28,7 +28,7 @@ An example site for this minimalist [GoHugo](https://gohugo.io/) theme so you to
  
  about = """
  
-  <img class="u-photo" src="/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp" alt="description">
+ <a href="https://betterwebsites.dev" rel="me" class="u-url">  <img class="u-photo" src="/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp" alt="description"></a>
   
   
 - photo by [@lorenzoherrera on Unsplash](https://unsplash.com/photos/vintage-gray-game-console-and-joystick-p0j-mE6mGo4) | licensed under Unsplash License.
