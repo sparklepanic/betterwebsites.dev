@@ -5,6 +5,9 @@ theme = '../..'
 copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/). Site theme [under MIT license](/theme/LICENSE). This creator is dedicated to the sharing of art, science, and ideas. See the [privacy policy and legal information](/legal) here."
 date_format = "2006-01-02" # Because anything other than ISO8601 is folly
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [markup.highlight]
 style = "dracula"
 
@@ -24,10 +27,34 @@ An example site for this minimalist [GoHugo](https://gohugo.io/) theme so you to
 # This is an optional About section. Comment out all the lines from about to the last 3 quote marks to disable.
  
  about = """
+ 
+  <img class="u-photo" src="/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp" alt="description">
+  
+  
+- photo by [@lorenzoherrera on Unsplash](https://unsplash.com/photos/vintage-gray-game-console-and-joystick-p0j-mE6mGo4) | licensed under Unsplash License.
 - Optional About section. Comment out all the lines from about to the last 3 quote marks to disable in the `hugo.toml`. 
 - It's piped to Markdown and accepts shortcodes.
 
-{{< figure src="/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp" link="/highres/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="An arched bridge over a pond of water with greenery all around" caption="*photo by [@lorenzoherrera](https://unsplash.com/photos/vintage-gray-game-console-and-joystick-p0j-mE6mGo4) on Unsplash* | Licensed under [Unsplash License](https://unsplash.com/license)." >}}
+<a href="https://www.dominionmovement.com/watch"><img src="/buttons/AnimalRights.gif" alt="description" height="31" width="88"></a> 
+<a href="https://transfemscience.org/articles/transfem-intro/"><img src="/buttons/hrt-e2vial.gif" alt="description" height="31" width="88"></a> 
+<a href="https://www.fedoraproject.org/"><img src="/buttons/madeon_linux.gif" alt="description" height="31" width="88"></a> 
+<a href="https://www.youtube.com/watch?v=EUrOxh_0leE"><img src="/buttons/NoAI.png" alt="description" height="31" width="88"></a> 
+<a href="https://genderdysphoria.fyi/"><img src="/buttons/transnow2.gif" alt="description" height="31" width="88"></a> 
+<a href="https://www.tiktok.com/@bubblepinkellealt/video/7494677691661110571"><img src="/buttons/twopaws.png" alt="description" height="31" width="88"></a>
+<a href="https://ublockorigin.com/"><img src="/buttons/ublock.png" alt="description" height="31" width="88"></a> 
+<a href="https://donate.wikimedia.org/"><img src="/buttons/Wikipedia.gif" alt="description" height="31" width="88"></a> 
+<a href="https://vim-adventures.com/"><img src="/buttons/vim.gif" alt="description" height="31" width="88"></a> 
+<a href="https://www.youtube.com/watch?v=SnG6jyAwpuQ"><img src="/buttons/free-palestine.gif" alt="description" height="31" width="88"></a> 
+<a href="https://archive.org/"><img src="/buttons/internet_archive.gif" alt="description" height="31" width="88"></a>
+
+
+<a href="https://ko-fi.com/sparklepanic"><img src="/buttons/kofi.webp" alt="description" height="31" width="88"></a> 
+
+
+<h3> created by </h3>
+
+<a href="https://ravenwinters.org"><img src="/buttons/sparklepanic-button.gif" alt="description" height="31" width="88"></a> 
+
 	"""
 
 # Below you can put links for your home page with supported Bootstrap icons

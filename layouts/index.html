@@ -1,6 +1,6 @@
 {{ define "main" }}
-
-          <div class="name">{{ .Site.Params.name }}</div>
+<div class="h-card">
+          <div class="name"><div class="p-name" rel="me">{{ .Site.Params.name }}</div></div>
 
 
            <p class="pronouns">{{ .Site.Params.pronouns }}</p>
@@ -12,5 +12,7 @@
   {{ partial "posts-home.html" . }}
   
   {{ partial "about.html" . }}
+  
+</div>
 
   {{ end }}

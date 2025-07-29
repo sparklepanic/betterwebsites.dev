@@ -1,4 +1,4 @@
-<h2 class="weblinks-title">Recent posts</h2>
+<h2 class="weblinks-title">recent posts</h2>
                     <ul>    
                             {{ range ( where site.RegularPages.ByLastmod.Reverse "Type" "posts" | first 5 ) }}
 <li><span class="post-date">{{.Date | time.Format "2006-01-02" }}</span>: <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
