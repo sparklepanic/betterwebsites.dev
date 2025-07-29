@@ -4,12 +4,12 @@
 <div class="post-frontmatter">
 <h1>{{ .Title }}</h1>
     
-<span class="post-date">Published {{.Date | time.Format "2006-01-02" }}</span>
+<span class="post-date">published {{.Date | time.Format "2006-01-02" }}</span>
 <span class="tags">in {{ range .Params.tags }} <a class="tag" href="/tags/{{ . | urlize }}">#{{ . }}</a>  {{ end }}, {{ .WordCount }} words</span>
 
     {{ if ne .Lastmod .Date }} <p class="post-update"> <svg class="bi" fill="currentColor">
                     <use xlink:href="/bootstrap-icons.svg#clock-history"/>
-</svg> Updated {{ .Lastmod | time.Format "2006-01-02" }}
+</svg> updated {{ .Lastmod | time.Format "2006-01-02" }}
         {{ end }}</p>
 
 </div>
