@@ -3,7 +3,7 @@
     {{ range .Site.Params.links }}
     <li><svg class="bi" fill="currentColor">
                     <use xlink:href="/bootstrap-icons.svg#{{ .icon }}"/>
-</svg> <a href="{{ .url }}" {{ .html_attributes | safeHTMLAttr }}>{{ .text }}</a></li>
+</svg> <a href="{{ .url | safeURL }}" {{ .html_attributes | safeHTMLAttr }}>{{ .text }}</a></li>
     {{ end }}
 </ul>
 </h2>
