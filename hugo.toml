@@ -1,0 +1,128 @@
+# betterwebsites.dev, a hugo theme
+baseURL = 'https://betterwebsites.dev'
+locale = 'en-us'
+title = 'betterwebsites.dev'
+copyright = "© except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/), site theme [under MIT license](/theme/LICENSE)"
+
+[params]
+# set the fallback opengraph image for link previews
+images = ['img/20230506-patagoniarainbowdolphins.cleaned.webp']
+
+# set a default author and email here, will also be used in RSS
+[params.author]
+email = 'awawa@betterwebsites.dev'
+name = 'betterwebsites.dev'
+
+# navbar items
+[[params.navbar]]
+text = "/posts"
+url = "/posts"
+
+[[params.navbar]]
+text = "/about"
+url = "/about"
+
+# buttons
+[[params.buttons]]
+button_location = "img/buttons/rss-button.gif"
+alt = "rss button"
+url = "/index.xml"
+
+[[params.buttons]]
+button_location = "img/buttons/AnimalRights.gif"
+alt = "animal rights now! button"
+url = "https://www.dominionmovement.com/watch"
+
+[[params.buttons]]
+button_location = "img/buttons/button203.png"
+alt= "this machine kills fascists"
+url = "https://en.wikipedia.org/wiki/This_machine_kills_fascists"
+
+[[params.buttons]]
+button_location = "img/buttons/DSA88x31.png"
+alt = "join dsa button"
+url = "https://www.dsausa.org/get-involved/"
+
+[[params.buttons]]
+button_location = "img/buttons/fuckai.gif"
+alt = "fuck your ai button"
+url = "https://www.youtube.com/watch?v=EUrOxh_0leE&t=1s&pp=ygURYWkgZG9lcyBub3QgZXhpc3Q%3D"
+
+[[params.buttons]]
+button_location = "img/buttons/IndieWeb.gif"
+alt = "indieweb.org button"
+url = "https://indieweb.org/"
+
+[[params.buttons]]
+button_location = "img/buttons/www2.gif"
+alt = "www button"
+url = "https://act.eff.org/"
+
+[[params.buttons]]
+button_location = "img/buttons/free-palestine.gif"
+alt = "free palestine button"
+url = "https://gazasoupkitchen.org/"
+
+[[params.buttons]]
+button_location = "img/buttons/button-maskup-pink.gif"
+alt = "masking button"
+url = "https://pmc19.com/data/"
+
+[[params.buttons]]
+button_location = "img/buttons/twopaws.png"
+alt = "made with my own two paws button"
+url = "https://web.archive.org/web/20260525181622if_/https://chowfur.com/cdn/shop/files/ChowfurProductMarch24-7.jpg?v=1717211503&width=1346"
+
+[[params.buttons]]
+button_location = "img/buttons/image.png"
+alt = "run by a queer person button"
+url = "https://infosec.exchange/@sparklepanic/116582997443734317"
+
+[[params.buttons]]
+button_location = "img/buttons/ra-button.png"
+alt = "ra button"
+url = "https://www.youtube.com/watch?v=vaKeCPgay9I"
+
+[[params.buttons]]
+button_location = "img/buttons/luownsite.gif"
+alt = "i made my own website u can too button"
+url = "https://home.omg.lol/"
+
+[[params.buttons]]
+button_location = "img/buttons/cpr.png"
+alt = "cpr button"
+url = "https://nursesfororegon.org"
+
+[[params.buttons]]
+button_location = "img/buttons/mastodon_button_3.gif"
+alt = "mastodon button"
+url = "https://web.archive.org/web/20260525171011/https://old.reddit.com/r/Mastodon/comments/1mumhme/what_why_is_mastodon/n9jwo57/"
+
+[[params.buttons]]
+button_location = "img/buttons/sparklepanic-button.gif"
+alt = "raven's button"
+url = "https://raven.lgbt"
+
+# webrings
+[[params.rings]]
+ringhtml = """
+<a href="https://baccyflap.com/noai/?prv&s=bwt" target="_top" title="previous">«</a>
+<a href="https://baccyflap.com/noai" target="_blank">no ai &#x1f6ab;&#129302; webring</a>
+<a style="font-size:60%" href="https://baccyflap.com/noai/?rnd" target="_top" title="random">(&#x1F3B2;)</a>
+<a href="https://baccyflap.com/noai/?nxt&s=bwt" target="_top" title="next">»</a>
+"""
+
+# enable our taxonomies
+[taxonomies]
+author = "authors"
+tags = "tags"
+
+# enable access to image metadata
+[imaging.meta]
+fields = ['**']
+
+# allow html in markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

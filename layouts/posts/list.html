@@ -1,11 +1,11 @@
 {{ define "main" }}
-
-<span>
- {{ partial "tag-cloud.html" . }}
-</span>
-
-<h2>{{ .Title }} ({{ printf "%d" (len .Pages) }})</h2>
-
-{{ partial "postli.html" . }}
-
+<h1>{{ .Title }} ({{ printf "%d" (len .Pages) }})</h1>
+<hr>
+tags: {{ $tags := site.GetPage "/tags" }}
+{{ range $tags.Pages }}
+<a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+{{ end }}
+<hr>
+{{ .Content }}
+{{ partial "postlist.html" . }}
 {{ end }}

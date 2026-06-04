@@ -1,0 +1,52 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<hr>
+<ul> 
+<li>{{.Date | time.Format "2006-01-02 15:04 MST" }}</li> 
+{{ if ne .Lastmod .Date }}<li>updated: {{ .Lastmod | time.Format "2006-01-02 15:04 MST" }}</li>{{ end }}
+<li> {{ .WordCount }} words </li>
+<li> by 
+{{- $theAuthors := slice -}}
+{{- range $author :=  .Params.authors }}
+
+  {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize $author)) }}
+
+    {{ $authorLink := printf `<a href=%q>%s</a>` .Permalink $author }}
+    {{ $theAuthors = $theAuthors | append $authorLink }}  
+
+  {{- end -}}
+
+{{ end }}
+
+{{ if eq (len $theAuthors) 2 }}
+  {{ delimit $theAuthors " and " | safeHTML }}
+{{ else }}
+  {{ delimit $theAuthors ", " " and " | safeHTML }}
+{{ end }}
+</li>
+<li>tagged: {{ range .Params.tags }}<a class="tag" href="/tags/{{ . | urlize }}">#{{ . }}</a> {{ end }} </li>
+{{ if .Params.toc }}<li>
+table of contents:
+    {{ .TableOfContents }}
+</li>
+{{ end }}
+</ul>
+<hr>
+{{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}
+{{ $alt := .Params.featured_alt }} 
+{{ with $image }}
+<figure>
+<img src="{{ ( $image.Fill "1500x500" ).RelPermalink }}" alt="{{ $alt }}" />
+<figcaption>
+{{ if reflect.IsImageResourceWithMeta . }}
+    {{ with .Meta }}
+      {{ .Date.Format "2006-01-02" }}.
+    {{ end }}
+    {{ end }} {{ $alt }}
+</figcaption>
+</figure>
+        {{ end }}
+
+{{ .Content }}
+
+{{ end }}

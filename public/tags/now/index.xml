@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Now on betterwebsites.dev</title>
+		<link>http://localhost:1313/tags/now/</link>
+		<description>Recent content in Now on betterwebsites.dev</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+			<managingEditor>awawa@betterwebsites.dev (betterwebsites.dev)</managingEditor>
+		
+		
+			<webMaster>awawa@betterwebsites.dev (betterwebsites.dev)</webMaster>
+		
+		
+			<copyright>© except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/), site theme [under MIT license](/theme/LICENSE)</copyright>
+		
+		
+			<lastBuildDate>Wed, 03 Jun 2026 03:03:39 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/now/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Now</title>
+				<link>http://localhost:1313/now/</link>
+				<pubDate>Wed, 03 Jun 2026 03:03:39 -0700</pubDate><author>awawa@betterwebsites.dev (betterwebsites.dev)</author>
+				<guid>http://localhost:1313/now/</guid>
+				<description>&lt;p&gt;hewoo,&lt;/p&gt;&#xA;&lt;p&gt;This theme started off long ago as a simple set of &lt;code&gt;html&lt;/code&gt; and &lt;code&gt;css&lt;/code&gt; files that I manually edited to have basically a landing page with my links to other things.&lt;/p&gt;&#xA;&lt;p&gt;Then it evolved into a full Hugo blog theme that I released in early 2025 which ran the site.&lt;/p&gt;&#xA;&lt;p&gt;Until now.&lt;/p&gt;&#xA;&lt;p&gt;The idea is simple: the designs of sites like &lt;a href=&#34;https://en.wikipedia.org&#34;&gt;https://en.wikipedia.org&lt;/a&gt;, &lt;a href=&#34;https://craigslist.com&#34;&gt;https://craigslist.com&lt;/a&gt;, &lt;a href=&#34;https://old.reddit.com&#34;&gt;https://old.reddit.com&lt;/a&gt;, &lt;a href=&#34;https://grapheneos.org&#34;&gt;https://grapheneos.org&lt;/a&gt;, and &lt;a href=&#34;https://text.npr.org/&#34;&gt;https://text.npr.org/&lt;/a&gt; are all cool and based (or in the words of one of my friends, &amp;ldquo;those sites fuck&amp;rdquo;).&lt;/p&gt;&#xA;&lt;p&gt;I wanted to make a blog theme that&amp;rsquo;s simple, multi-author capable, was easy to read, and most importantly: that it fucks.&lt;/p&gt;&#xA;&lt;p&gt;So, here is my humble and free offering, MIT licensed.&lt;/p&gt;&#xA;&lt;p&gt;If anything about this theme is wrong or could be improved, lemme know by going to the site code and filing an issue or proposing a patch.&lt;/p&gt;&#xA;&lt;p&gt;I wrote this page with a more normie person in mind, as I believe more folks should get comfortable taking back our means of computation. This is a static site and it can be deployed anywhere.&lt;/p&gt;&#xA;&lt;p&gt;I encourage more of us to write.&lt;/p&gt;&#xA;&lt;p&gt;&amp;mdash; Raven&lt;/p&gt;&#xA;</description>
+			</item>
+	</channel>
+</rss>

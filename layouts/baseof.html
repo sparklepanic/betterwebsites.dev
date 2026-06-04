@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
+    <head>
+    {{ partial "head.html" . }}
+    </head>
+    <body>
+      <header>
+      {{ partial "header.html" . }}
+      </header>
+        <main>
+        {{ with images.QR .Permalink }}
+          <figure>
+            <img
+            src="{{ .RelPermalink }}"
+            width="90"
+            height="90"
+            alt="QR code linking to {{ $.Permalink }}"
+            class="qr-code"
+            loading="lazy"
+            >
+              <figcaption class="qr-code">see the live page: {{ $.Permalink }} 
+              </figcaption>
+            </figure>
+        {{ end }}
+      {{ block "main" . }}{{ end }}
+      </main>
+      <footer>
+        <hr>
+        <p>
+        <copyright>{{.Site.Copyright | markdownify }}<copyright>
+        </p>
+        <details>
+          <summary>
+            🗺️ sitemap
+          </summary>
+            <ul>
+            {{ range .Site.Pages.ByLastmod.Reverse  }}
+              <li><a href="{{ .RelPermalink }}">{{ .Path }}</a></li>
+              {{ end }}
+            </ul>
+        </details>
+      </footer>
+    </body>
+  </html>

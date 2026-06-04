@@ -1,15 +1,14 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date | time.Format "2006-01-02" }}
-#lastmod:
-#summary:
-#description:
-#thumbnail:
-draft: false
-#tags:
-#- blog
-#params:
-#icon: 
-#toc: "true"
----
++++
+date = '{{ .Date }}'
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+#description = ''
+#images ['']
+authors = ['{{ .Site.Params.author.name }}']
+tags = ['tagless']
+#featured_image = 'image-name.webp'
+#featured_alt = ''
+#toc = true
+#lastmod = '{{ .Date }}'
++++
+
 

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h1>#{{ .Title }} ({{ printf "%d" (len .Pages) }})</h1>
+
+  <hr>
+tags: {{ $tags := site.GetPage "/tags" }}
+{{ range $tags.Pages }}
+ <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+{{ end }}
+ 
+{{ partial "postlist.html" . }}
+
+ {{ end }}

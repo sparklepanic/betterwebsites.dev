@@ -1,0 +1,56 @@
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{- if .Get "link" -}}
+    <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+  {{- end -}}
+
+  {{- $u := urls.Parse (.Get "src") -}}
+  {{- $src := $u.String -}}
+  {{- if not $u.IsAbs -}}
+    {{- with or (.Page.Resources.Get $u.Path) (resources.Get $u.Path) -}}
+      {{- $src = .RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{ $src := resources.Get (.Get "src") }}
+
+  {{ $width := "" }}
+  {{ $height := "" }}
+
+  {{ if not (eq (.Get "width") "auto") }}
+    {{ $width = (.Get "width") }}
+  {{ end }}
+  {{ if not (eq (.Get "height") "auto") }}
+    {{ $height = (.Get "height") }}
+  {{ end }}
+
+  {{ $size := printf "%sx%s" $width $height }}
+
+  {{ if not (eq $size "x") }}
+    {{ $src = $src.Resize $size }}
+  {{ end }}
+
+  <img src="{{ $src.RelPermalink }}"
+    {{- if or (.Get "alt") (.Get "caption") }}
+    alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+    {{- end -}}
+    {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+    {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    {{- with .Get "loading" }} loading="{{ . }}"{{ end -}}
+  ><!-- Closing img tag -->
+  {{- if .Get "link" }}</a>{{ end -}}
+  {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+    <figcaption>
+      {{ with (.Get "title") -}}
+        <h4>{{ . }}</h4>
+      {{- end -}}
+      {{- if or (.Get "caption") (.Get "attr") -}}<span>
+        {{- .Get "caption" | markdownify -}}
+        {{- with .Get "attrlink" }}
+          <a href="{{ . }}">
+        {{- end -}}
+        {{- .Get "attr" | markdownify -}}
+        {{- if .Get "attrlink" }}</a>{{ end }}</span>
+      {{- end }}
+    </figcaption>
+  {{- end }}
+</figure>

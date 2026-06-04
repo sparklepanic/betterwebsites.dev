@@ -1,0 +1,7 @@
+<span class="h-card">
+<a class="u-url u-uid" href="/">{{ .Site.Title }}</a>
+| {{ range .Site.Params.navbar }}
+<a href="{{ .url }}">{{ .text }}</a>
+</span>
+{{ end }}
+<hr>

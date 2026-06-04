@@ -1,0 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="{{ (resources.Get "css/main.css").RelPermalink }}">
+{{ template "_internal/opengraph.html" . }}
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>

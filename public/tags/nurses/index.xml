@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Nurses on betterwebsites.dev</title>
+		<link>http://localhost:1313/tags/nurses/</link>
+		<description>Recent content in Nurses on betterwebsites.dev</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+			<managingEditor>awawa@betterwebsites.dev (betterwebsites.dev)</managingEditor>
+		
+		
+			<webMaster>awawa@betterwebsites.dev (betterwebsites.dev)</webMaster>
+		
+		
+			<copyright>© except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/), site theme [under MIT license](/theme/LICENSE)</copyright>
+		
+		
+			<lastBuildDate>Wed, 03 Jun 2026 16:06:12 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/nurses/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>melt ICE</title>
+				<link>http://localhost:1313/posts/melt-ice/</link>
+				<pubDate>Wed, 03 Jun 2026 16:06:12 -0700</pubDate><author>awawa@betterwebsites.dev (betterwebsites.dev)</author>
+				<guid>http://localhost:1313/posts/melt-ice/</guid>
+				<description>&lt;p&gt;This example post is mostly photos&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;&#xA;  &#xA;  &#xA;&#xA;  &#xA;    &#xA;  &#xA;  &#xA;    &#xA;  &#xA;&#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;img src=&#34;http://localhost:1313/img/20260131-nursesagainstice.jpg&#34;&#xA;    alt=&#34;Nurses Against ICE, we care for ALL&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;span&gt;20260131 - Nurses Against ICE&lt;/span&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&#xA;&#xA;  &#xA;  &#xA;&#xA;  &#xA;    &#xA;  &#xA;  &#xA;    &#xA;  &#xA;&#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;img src=&#34;http://localhost:1313/img/20260527-abolish-ice-phonebooth.jpg&#34;&#xA;    alt=&#34;abolish ice sticker on phone booth&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;span&gt;20260527 - abolish ice&lt;/span&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&#xA;&#xA;  &#xA;  &#xA;&#xA;  &#xA;    &#xA;  &#xA;  &#xA;    &#xA;  &#xA;&#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;img src=&#34;http://localhost:1313/img/20260131-dontlookaway.jpg&#34;&#xA;    alt=&#34;a person holding a sign that says don&amp;#39;t look away with a drawing of a blue toque&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;span&gt;20260527 - don&amp;rsquo;t look away&lt;/span&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;</description>
+			</item>
+	</channel>
+</rss>

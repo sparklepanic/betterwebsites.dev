@@ -1,0 +1,3 @@
+{{ with resources.Get (.Get "src") }}
+  <img class="emote" src="{{ .RelPermalink }}"></img>
+{{ end }}

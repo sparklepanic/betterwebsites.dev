@@ -1,0 +1,239 @@
+:root {
+  --sans-serif-font: system-ui;
+  --monospace-font: monospace; 
+  --foreground-color: #000;
+  --background-color: #fff;
+  --link-color: #00f;
+  --link-decoration-color: #00f;
+  --link-visited-color: purple;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: #fff;
+    --background-color: #000;
+    --link-color: #5BCEFA;
+    --link-decoration-color: #5BCEFA;
+    --link-visited-color: pink;
+  }
+}
+
+html {
+  font-size: 100%;
+}
+
+html:has(body) {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  font-family: var(--monospace-font);
+  color: var(--foreground-color);
+  background: var(--background-color);
+  max-width: 80ch;
+  margin: 0 1rem;
+  width: 100%;
+  word-wrap:break-word;
+  font-size: 0.9rem;
+}
+
+body>header {
+  position: sticky;
+  top: 0;
+  padding-top: 1em;
+  background: var(--background-color);
+}
+
+h2 {
+  border-bottom: 1px solid var(--foreground-color);
+}
+
+h1, h2 {
+  clear: both;
+}
+
+hr {
+  border-style: dashed;
+  color: var(--foreground-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline var(--link-decoration-color);
+}
+
+a:visited {
+  color: var(--link-visited-color);
+  text-decoration: underline var(--link-visited-color);
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+table {
+  border: 1px solid var(--foreground-color);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table thead,
+table tfoot {}
+
+table th,
+table td {
+  padding: 2px 1ch;
+  border: 1px solid var(--foreground-color);
+  overflow-x: auto;
+}
+
+pre {
+  background-color: rgba(255, 192, 203, 0.25);
+  color: var(--foreground-color);
+  padding: 2em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+code {
+  background-color: rgba(255, 192, 203, 0.25);
+  color: var(--foreground-color);
+  padding: 0 1px;
+  border-radius: 2px;
+}
+
+pre>code {
+  background-color: transparent;
+  color: var(--foreground-color);
+}
+
+table code {
+  border: none;
+}
+
+[id] {
+  scroll-margin-top: 10vh;
+}
+
+div:has(table) {
+  overflow-x: auto;
+}
+
+footer {
+  padding-bottom: 5vh;
+  }
+
+details > summary {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--foreground-color);
+  border-top: 1px dashed var(--foreground-color);
+}
+
+figure {
+  max-width: 100%;
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+figcaption {
+  font-size: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  image-rendering: pixelated;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.emote {
+  width: auto;
+  height: 1.225rem;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.float-left {
+  float: left;
+  display: inline-block;
+  width: 30%;
+  margin: 0;
+  margin-right: 2ch;
+}
+
+.float-right {
+  float: right;
+  display: inline-block;
+  width: 30%;
+  margin: 0;
+  margin-left: 2ch;
+
+}
+
+/* Hide QR code by default */
+.qr-code {
+  display: none;
+}
+
+/* Show QR code when printing */
+@media print {
+    .qr-code {
+    display: block;
+    font-family: monospace;
+    text-decoration: underline;
+    color: black;
+  }
+  
+    header {
+    visibility: hidden;
+  }
+
+    pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+@page {
+	margin: 2cm 4cm;
+}
+
+@page {
+  @bottom-right {
+    margin-top 1rem;
+    border-top: .25pt solid #666;
+    content: counter(page);
+  }
+}
+
+/* Decrease font size on very narrow viewports, increase font size and max-width on larger viewports */
+
+@media (max-width: 350px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font-size: 110%;
+        }
+
+    body {
+        max-width: 700px;
+        }
+}

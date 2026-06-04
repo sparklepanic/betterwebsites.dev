@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-<h1>page not found</h1>
+<h1>404 page not found</h1>
 
-<p class="notfound">404</p>
+<p>sorry, this page is no longer available</p>
 
-<h3>do not be afraid...</h3>
+<p>but it's all okay because,,,</p>
 
 <blockquote>
 I must not fear. <br>
@@ -18,5 +18,9 @@ Only I will remain. <br>
 </blockquote>
 
 — <em>The Litany Against Fear</em> as written by Frank Herbert in <em>Dune</em> (1965)
+
+<p>
+if something was supposed to be here and it's not, you can look on <a href=https://archive.org>archive.org</a> or email: <a href="mailto:{{ .Site.Params.author.email }}">{{ .Site.Params.author.email }}</a>
+</p>
 
 {{ end }}

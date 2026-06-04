@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<h1 class="p-name" rel="me" >{{ .Site.Params.author.name }}</h1>
+
+{{ .Content }}
+
+<h2>recent posts</h2>
+<ul>    
+{{ range ( where site.RegularPages.ByLastmod.Reverse "Type" "posts" | first 5 ) }}
+<li><span>{{.Date | time.Format "2006-01-02" }}</span>: <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
+        {{ if ne .Lastmod .Date }} <span>(updated: {{ .Lastmod | time.Format "2006-01-02" }})</span>
+        {{ end }}
+</li>
+{{ end }}
+</ul>
+<a href="/posts">view all posts</a>
+
+{{ if .Site.Params.buttons }}
+<h2>buttons</h2>
+
+{{ range .Site.Params.buttons }}
+
+{{ $button := resources.Get .button_location }} 
+
+{{ if .url }}
+<a class="button" href="{{ .url }}">
+<img class="button" src="{{ ( $button.Resize "88x31" ).RelPermalink }}" alt="{{ .alt }}">
+</a> 
+{{ else }}
+<img class="button" src="{{ ( $button.Resize "88x31" ).RelPermalink }}" alt="{{ .alt }}">
+{{ end }}
+{{ end }}
+{{ else }}
+{{ end }}
+
+{{ if .Site.Params.rings }}
+<h2>webrings</h2>
+
+<ul>
+{{ range .Site.Params.rings }}
+<li>{{ .ringhtml | safeHTML }}</li>
+{{ end }}
+</ul>
+{{else}}
+{{ end }}
+
+{{ end }}

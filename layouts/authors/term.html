@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+
+{{ if ne .Lastmod .Date }} updated: {{ .Lastmod | time.Format "2006-01-02 15:04 MST" }} {{ end }}
+
+{{ .Content }}
+
+
+
+<h2>by this author ({{ printf "%d" (len .Pages) }})</h2>
+
+
+{{ partial "postlist.html" . }}
+
+
+ {{ end }}
